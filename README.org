@@ -1,0 +1,25 @@
+* Shortify
+This app is used to apply /Rolling Prediction Averaging/ on Microsoft Teams meeting so as to remove the lobby-parts and silence them.
+This can also be seen as a meeting summarization technique as it removes the silent and non-presentation part.
+
+** Requirements
+A working Python installation is needed , other packages needed are
+- Tensorflow for using the model
+- MoviePy for splitting and joining clips
+- Unsilence for silencing the video clip
+- Tabulate for prettify
+- Colorama for color output
+- Prompt Toolkit for prompts
+
+You also need the model stored in a folder named model , in the standard Tensorflow format(not H5!).
+You can obtain it by training the model defined in the ~ipynb~ file. Run it on a GPU-enabled machine for faster training.
+
+For sucessfull installation of MoviePy and Unsilence requires working installation of /ffmpeg/.
+** Usage
+Just clone the repository and run the python file shortify.py
+#+begin_src sh
+python shortify.py
+#+end_src
+
+
+
